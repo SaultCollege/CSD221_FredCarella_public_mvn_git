@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings persistenceUnitName="try2_PU" jaxb-support="false" id="_14248780934701" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:ns4="http://nbmodeler.java.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:package>lecture4b_jpa.entities</jpa:package>
+    <jpa:entity class="Publication1" jaxb-root-element="false" static-metamodel="false" visibile="true" minimized="false" id="_1424878153927">
+        <jpa:inheritance/>
+        <jpa:discriminator-column/>
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_14248782290645">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+            <jpa:basic name="title" attribute-type="String" visibile="true" id="_14248782341216">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="price" attribute-type="Double" visibile="true" id="_14248782358097">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+            <jpa:basic name="copies" attribute-type="Integer" visibile="true" id="_14248782408578">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity class="Book1" jaxb-root-element="false" static-metamodel="false" superclassId="_1424878153927" visibile="true" minimized="false" id="_1424878560685">
+        <jpa:attributes>
+            <jpa:basic name="author" attribute-type="String" visibile="true" id="_142487868737111">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram id="_14248780934712">
+        <plane elementRef="_14248780934701" id="_14248780934713_p">
+            <shape elementRef="_1424878153927" id="_1424878153927_gui">
+                <Bounds x="276.0" y="64.0" width="166.0" height="134.0"/>
+            </shape>
+            <shape elementRef="_1424878560685" id="_1424878560685_gui">
+                <Bounds x="307.0" y="286.0" width="132.0" height="58.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

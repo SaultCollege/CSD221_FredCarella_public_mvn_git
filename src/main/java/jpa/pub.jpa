@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings jaxb-support="false" id="_14243606107121" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:ns4="http://nbmodeler.java.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:package>jpa.entities</jpa:package>
+    <jpa:entity class="Publication" jaxb-root-element="false" static-metamodel="false" visibile="true" minimized="false" id="_1424360617518">
+        <jpa:inheritance/>
+        <jpa:discriminator-column/>
+        <jpa:attributes>
+            <jpa:id name="id" attribute-type="Long" visibile="true" id="_14243606908105">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true"/>
+                <jpa:generated-value/>
+            </jpa:id>
+            <jpa:basic name="title" attribute-type="String" visibile="true" id="_142436085797015">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic name="author" attribute-type="String" visibile="true" id="_142436085849716">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic name="price" attribute-type="Double" visibile="true" id="_142436085938517">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity class="Book" jaxb-root-element="false" static-metamodel="false" superclassId="_1424360617518" visibile="true" minimized="false" id="_1424360695049">
+        <jpa:attributes>
+            <jpa:basic name="author" attribute-type="String" visibile="true" id="_142436082502512">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity class="Magazine" jaxb-root-element="false" static-metamodel="false" superclassId="_1424360617518" visibile="true" minimized="false" id="_1424360738917">
+        <jpa:inheritance/>
+        <jpa:discriminator-column/>
+        <jpa:attributes>
+            <jpa:basic name="orderQty" attribute-type="Integer" visibile="true" id="_142436084149713">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+            <jpa:basic name="currentIssue" attribute-type="String" visibile="true" id="_142436084884914">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity class="DiscMag" jaxb-root-element="false" static-metamodel="false" superclassId="_1424360738917" visibile="true" minimized="false" id="_1424360751126">
+        <jpa:attributes>
+            <jpa:basic name="hasDisk" attribute-type="Boolean" visibile="true" id="_142436097867118">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255"/>
+            </jpa:basic>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram id="_14243606107132">
+        <plane elementRef="_14243606107121" id="_14243606107133_p">
+            <shape elementRef="_1424360617518" id="_1424360617518_gui">
+                <Bounds x="274.0" y="216.0" width="159.0" height="134.0"/>
+            </shape>
+            <shape elementRef="_1424360695049" id="_1424360695049_gui">
+                <Bounds x="127.0" y="450.0" width="128.0" height="58.0"/>
+            </shape>
+            <shape elementRef="_1424360738917" id="_1424360738917_gui">
+                <Bounds x="456.0" y="450.0" width="150.0" height="79.0"/>
+            </shape>
+            <shape elementRef="_1424360751126" id="_1424360751126_gui">
+                <Bounds x="459.0" y="660.0" width="145.0" height="58.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

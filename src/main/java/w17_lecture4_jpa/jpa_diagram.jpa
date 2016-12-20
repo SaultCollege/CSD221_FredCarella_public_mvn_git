@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="w17_lecture4_jpa.entities" v="1.5.4" persistenceUnitName="w17_lecture4_jpa_PU" xs="false" id="_14781161111988" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" sm="false" abs="false" class="Publication_w17" visibile="true" minimized="false" rootElement="_14781161111988" id="_147811611122611">
+        <jpa:attributes>
+            <basic attribute-type="Integer" visibile="true" name="copies" id="_147811611122612"/>
+            <basic attribute-type="Double" visibile="true" name="price" id="_147811611122613"/>
+            <basic attribute-type="String" visibile="true" name="title" id="_147811611122615"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_147811611122614">
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:inheritance strategy="SINGLE_TABLE"/>
+        <jpa:discriminator-column/>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Book_w17" superclassId="_147811611122611" visibile="true" minimized="false" rootElement="_14781161111988" id="_14781161112259">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="author" id="_147811611122610"/>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Magazine_w17" superclassId="_147811611122611" visibile="true" minimized="false" rootElement="_14781161111988" id="_147811611125716">
+        <jpa:attributes>
+            <basic attribute-type="Integer" visibile="true" name="quantity" id="_147811611125717"/>
+            <basic attribute-type="String" visibile="true" name="currentIssue" id="_147811611125718"/>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram>
+        <plane elementRef="_14781161111988">
+            <shape elementRef="_147811611122611">
+                <Bounds x="252.0" y="32.0" width="190.0" height="134.0"/>
+            </shape>
+            <shape elementRef="_14781161112259">
+                <Bounds x="32.0" y="230.0" width="156.0" height="58.0"/>
+            </shape>
+            <shape elementRef="_147811611125716">
+                <Bounds x="506.0" y="230.0" width="181.0" height="79.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="jpa_exercise.entities" v="1.5.1" persistenceUnitName="jpa_exercise" xs="false" id="_14594422276061" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:schema>jpa_exercise</jpa:schema>
+    <jpa:entity xre="false" sm="false" abs="false" class="Publication" visibile="true" minimized="false" rootElement="_14594422276061" id="_1459442235352">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="title" id="_14594428499887"/>
+            <basic attribute-type="Double" visibile="true" name="price" id="_14594428533478"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_14594422353972">
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Book" superclassId="_1459442235352" visibile="true" minimized="false" rootElement="_14594422276061" id="_1459442243849">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="author" id="_14594422968126"/>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Magazine" superclassId="_1459442235352" visibile="true" minimized="false" rootElement="_14594422276061" id="_1459445093402">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="currIssue" id="_145944511729411"/>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Ticket" visibile="true" minimized="false" rootElement="_14594422276061" id="_1459448236659">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="client" id="_14594482732778"/>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_14594482366776">
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:c/>
+    <jpa:diagram>
+        <plane elementRef="_14594422276061">
+            <shape elementRef="_1459442235352">
+                <Bounds x="239.0" y="129.0" width="159.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1459442243849">
+                <Bounds x="111.0" y="380.0" width="128.0" height="58.0"/>
+            </shape>
+            <shape elementRef="_1459445093402">
+                <Bounds x="414.0" y="361.0" width="150.0" height="58.0"/>
+            </shape>
+            <shape elementRef="_1459448236659">
+                <Bounds x="474.0" y="167.0" width="131.0" height="92.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

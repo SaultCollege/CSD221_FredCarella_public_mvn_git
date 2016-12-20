@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" pkg="w16_lecture4_jpa.entities" persistenceUnitName="jpa_PU" xs="false" id="_14569297058864" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity xre="false" sm="false" abs="false" class="Publication_w16" visibile="true" minimized="false" rootElement="_14569297058864" id="_1456929718697">
+        <jpa:attributes>
+            <basic attribute-type="Integer" visibile="true" name="copies" id="_145692981248713">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="Double" visibile="true" name="price" id="_145692982248014">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="title" id="_145692983197615">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_145692997652721">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Book_w16" superclassId="_1456929718697" visibile="true" minimized="false" rootElement="_14569297058864" id="_1456929733161">
+        <jpa:attributes>
+            <basic attribute-type="String" visibile="true" name="author" id="_145692987025818">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_145692976747010">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity xre="false" sm="false" abs="false" class="Magazine_w16" superclassId="_1456929718697" visibile="true" minimized="false" rootElement="_14569297058864" id="_1456929745539">
+        <jpa:attributes>
+            <basic attribute-type="Integer" visibile="true" name="quantity" id="_145692992711719">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <basic attribute-type="String" visibile="true" name="currentIssue" id="_145692995878220">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </basic>
+            <jpa:id attribute-type="Long" visibile="true" name="id" id="_145692977620611">
+                <jpa:column unique="false" nullable="true" insertable="true" updatable="true" length="255" precision="0" scale="0"/>
+            </jpa:id>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:diagram id="_14569297058865">
+        <plane elementRef="_14569297058864" id="_14569297058866_p">
+            <shape elementRef="_1456929718697" id="_1456929718697_gui">
+                <Bounds x="148.0" y="40.0" width="190.0" height="134.0"/>
+            </shape>
+            <shape elementRef="_1456929733161" id="_1456929733161_gui">
+                <Bounds x="63.0" y="351.0" width="156.0" height="92.0"/>
+            </shape>
+            <shape elementRef="_1456929745539" id="_1456929745539_gui">
+                <Bounds x="402.0" y="320.0" width="181.0" height="113.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>

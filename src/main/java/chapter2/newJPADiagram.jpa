@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings jaxb-support="false" id="_14212473492181" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:ns4="http://nbmodeler.java.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity class="Book" jaxb-root-element="false" static-metamodel="false" visibile="true" minimized="false" id="_1421247407156">
+        <jpa:attributes>
+            <jpa:id name="id1" attribute-type="Long" visibile="true" id="_14212474270755"/>
+            <jpa:basic name="attribute1" attribute-type="String" visibile="true" id="_14212474308836"/>
+            <jpa:basic name="attribute2" attribute-type="String" visibile="true" id="_14212474318357"/>
+        </jpa:attributes>
+    </jpa:entity>
+    <jpa:entity class="Entity_1" jaxb-root-element="false" static-metamodel="false" superclassId="_1421247407156" visibile="true" minimized="false" id="_1421247462325">
+        <jpa:attributes/>
+    </jpa:entity>
+    <jpa:diagram id="_14212473492182">
+        <plane elementRef="_14212473492181" id="_14212473492193_p">
+            <shape elementRef="_1421247407156" id="_1421247407156_gui">
+                <Bounds x="115.0" y="55.0" width="128.0" height="113.0"/>
+            </shape>
+            <shape elementRef="_1421247462325" id="_1421247462325_gui">
+                <Bounds x="102.0" y="287.0" width="141.0" height="24.0"/>
+            </shape>
+        </plane>
+    </jpa:diagram>
+</jpa:entity-mappings>
