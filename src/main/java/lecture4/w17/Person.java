@@ -9,7 +9,7 @@ package lecture4.w17;
  *
  * @author fcarella
  */
-public class Person {
+public class Person extends Object{
     private String firstname;
     private String lastname;
 
