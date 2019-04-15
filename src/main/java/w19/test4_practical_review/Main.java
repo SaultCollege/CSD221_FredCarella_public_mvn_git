@@ -40,7 +40,7 @@ public class Main {
             Regular_EmployeeJpaController controller=new Regular_EmployeeJpaController(emf);
             List<Regular_Employee> res = controller.findRegular_EmployeeEntities();
             for(Regular_Employee b:res){
-//                b.printArea();
+                System.out.println("Yearly salary="+b.calcSalary());
             }
             
             

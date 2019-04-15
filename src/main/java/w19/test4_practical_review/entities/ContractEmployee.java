@@ -15,7 +15,7 @@ public class ContractEmployee extends Employee implements Serializable {
     private float pay_per_hr;
 
     @Basic
-    private String contract_period;
+    private int contract_period;
 
     public float getPay_per_hr() {
         return pay_per_hr;
@@ -25,12 +25,17 @@ public class ContractEmployee extends Employee implements Serializable {
         this.pay_per_hr = pay_per_hr;
     }
 
-    public String getContract_period() {
+    public int getContract_period() {
         return contract_period;
     }
 
-    public void setContract_period(String contract_period) {
+    public void setContract_period(int contract_period) {
         this.contract_period = contract_period;
+    }
+
+    @Override
+    public double calcSalary() {
+        return pay_per_hr * 40 * getContract_period();
     }
 
 }

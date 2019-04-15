@@ -32,4 +32,9 @@ public class Regular_Employee extends Employee {
         this.bonus = bonus;
     }
 
+    @Override
+    public double calcSalary() {
+        return getSalary() * 12 + getBonus();
+    }
+
 }

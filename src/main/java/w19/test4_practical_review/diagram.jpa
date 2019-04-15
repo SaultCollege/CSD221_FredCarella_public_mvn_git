@@ -49,7 +49,7 @@
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
-            <jpa:basic attribute-type="String" v="true" xvt="" name="contract_period" id="_155533913897732">
+            <jpa:basic attribute-type="int" v="true" xvt="" name="contract_period" id="_155533913897732">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>

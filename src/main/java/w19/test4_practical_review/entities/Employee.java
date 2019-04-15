@@ -12,7 +12,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Employee implements Serializable {
+public abstract class Employee implements Serializable, EmpInterface {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
