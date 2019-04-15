@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" ptype="MONOLITH" ppkg="w19.test4_practical" epkg="entities" v="5.2" rws="_15553323529322" Pws="_15553323529322" cws="_15553323529322" persistenceUnitName="fred_carella_test4_PU" sm="false" xs="false" id="_15553323529321" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity compositePrimaryKeyClass="ShapePK" abs="false" class="Shape" v="true" jbn="false" xre="false" m="false" rootElement="_15553323529321" id="_15553323651053">
+        <jpa:ath>FCAdmin</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="Double" v="true" xvt="" name="area" id="_15553323798616">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_15553323651304">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Shape.findAll">
+            <jpa:query>Select e from Shape e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Shape.findByArea">
+            <jpa:query>Select s from Shape s where s.area=:area</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="SquarePK" abs="false" class="Square" superclassId="_15553323651053" v="true" jbn="false" xre="false" m="false" rootElement="_15553323529321" id="_15553324041937">
+        <jpa:ath>FCAdmin</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="double" v="true" xvt="" name="width" id="_155533242128311">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="double" v="true" xvt="" name="theLength" id="_155533242249212">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Square.findAll">
+            <jpa:query>Select e from Square e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Square.findByWidth">
+            <jpa:query>Select s from Square s where s.width=:width</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Square.findByTheLength">
+            <jpa:query>Select s from Square s where s.theLength=:theLength</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="TrianglePK" abs="false" class="Triangle" superclassId="_15553323651053" v="true" jbn="false" xre="false" m="false" rootElement="_15553323529321" id="_155533245120913">
+        <jpa:ath>FCAdmin</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="double" v="true" xvt="" name="base" id="_155533246088417">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="double" v="true" xvt="" name="height" id="_155533246142818">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Triangle.findAll">
+            <jpa:query>Select e from Triangle e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Triangle.findByBase">
+            <jpa:query>Select e from Triangle e where e.base=:base</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Triangle.findByHeight">
+            <jpa:query>Select e from Triangle e where e.height=:height</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15553323529322">
+            <i ref="_155533245120913" x="650" y="343"/>
+            <i ref="_15553323651053" x="431" y="89"/>
+            <i ref="_15553324041937" x="249" y="343"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
