@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" ptype="MONOLITH" ppkg="w19.test4_review" epkg="entities" v="5.2" rws="_155535374586618" Pws="_155535374586618" cws="_155535374586618" persistenceUnitName="w19.test4_review_PU" sm="false" xs="false" id="_155535374586517" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity compositePrimaryKeyClass="EmployeePK" abs="false" class="Employee" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380192819">
+        <jpa:ath>fcarella</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_155535392110028">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_155535380192920">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:generated-value strategy="IDENTITY"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Employee.findAll">
+            <jpa:query>Select e from Employee e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Employee.findByName">
+            <jpa:query>Select e from Employee e where e.name=:name</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="Regular_EmployeePK" abs="false" class="Regular_Employee" superclassId="_155535380192819" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380501522">
+        <jpa:ath>fcarella</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="float" v="true" xvt="" name="salary" id="_155535407330329">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="int" v="true" xvt="" name="bonus" id="_155535407971230">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Regular_Employee.findAll">
+            <jpa:query>Select e from Regular_Employee e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Regular_Employee.findBySalary">
+            <jpa:query>Select r from Regular_Employee r where r.salary=:salary</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Regular_Employee.findByBonus">
+            <jpa:query>Select r from Regular_Employee r where r.bonus=:bonus</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity compositePrimaryKeyClass="Contract_EmployeePK" abs="false" class="Contract_Employee" superclassId="_155535380192819" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380738425">
+        <jpa:ath>fcarella</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="float" v="true" xvt="" name="pay_per_hour" id="_155535421038633">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+            <jpa:basic attribute-type="int" v="true" xvt="" name="contract_period" id="_155535421820234">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:basic>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Contract_Employee.findAll">
+            <jpa:query>Select e from Contract_Employee e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Contract_Employee.findByPay_per_hour">
+            <jpa:query>Select c from Contract_Employee c where c.pay_per_hour=:pay_per_hour</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Contract_Employee.findByContract_period">
+            <jpa:query>Select c from Contract_Employee c where c.contract_period=:contract_period</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_155535374586618">
+            <i ref="_155535380192819" x="213" y="86"/>
+            <i ref="_155535380501522" x="62" y="282"/>
+            <i ref="_155535380738425" x="371" y="282"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>
