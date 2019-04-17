@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import w19.test4_practical_review.entities.ContractEmployee;
 import w19.test4_practical_review.entities.Regular_Employee;
 
 /**
@@ -33,6 +34,12 @@ public class Main {
             re.setSalary(2000.15f);
             re.setBonus(1000);
             em.persist(re);
+            
+            ContractEmployee ce= new ContractEmployee();
+            ce.setName("Joe Contract Employee");
+            ce.setPay_per_hr(100);
+            ce.setContract_period(100);
+            em.persist(ce);
 //            List<Square> l=new ArrayList<Square>();
             ////////////////////
             em.getTransaction().commit();
@@ -41,6 +48,14 @@ public class Main {
             List<Regular_Employee> res = controller.findRegular_EmployeeEntities();
             for(Regular_Employee b:res){
                 System.out.println("Yearly salary="+b.calcSalary());
+            }
+            
+            ContractEmployeeJpaController cec=new ContractEmployeeJpaController(emf);
+            List<ContractEmployee> ceList = cec.findContractEmployeeEntities();
+            for(ContractEmployee c:ceList){
+                System.out.println("Name="+c.getName()+", Salary="+c.calcSalary());
+                c.setName("George Washington");
+                cec.edit(c);
             }
             
             

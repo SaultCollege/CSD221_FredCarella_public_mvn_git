@@ -27,7 +27,10 @@ public static void main(String[] args) {
             em.getTransaction().begin();
             //////////////
             Regular_Emp connor=new Regular_Emp();
-            
+            connor.setName("Connor Doda");
+            connor.setSalary(5000);
+            connor.setBonus(1000);
+            em.persist(connor);
             ////////////////////
             em.getTransaction().commit();
             
