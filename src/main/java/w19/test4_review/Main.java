@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import w19.test4_review.entities.Regular_Emp;
 
 /**
  *
@@ -21,10 +22,12 @@ public static void main(String[] args) {
         EntityManager em = null;
 
         try {
-            emf = Persistence.createEntityManagerFactory("fred_carella_test4_PU");
+            emf = Persistence.createEntityManagerFactory("w19.test4_review_PU");
             em = emf.createEntityManager();
             em.getTransaction().begin();
             //////////////
+            Regular_Emp connor=new Regular_Emp();
+            
             ////////////////////
             em.getTransaction().commit();
             

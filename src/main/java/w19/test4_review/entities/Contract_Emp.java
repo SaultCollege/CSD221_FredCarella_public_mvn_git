@@ -8,20 +8,20 @@ import javax.persistence.Entity;
  */
 
 @Entity
-public class Contract_Employee extends Employee {
+public class Contract_Emp extends Emp {
 
     @Basic
-    private float pay_per_hour;
+    private double pay_per_hr;
 
     @Basic
     private int contract_period;
 
-    public float getPay_per_hour() {
-        return pay_per_hour;
+    public double getPay_per_hr() {
+        return pay_per_hr;
     }
 
-    public void setPay_per_hour(float pay_per_hour) {
-        this.pay_per_hour = pay_per_hour;
+    public void setPay_per_hr(double pay_per_hr) {
+        this.pay_per_hr = pay_per_hr;
     }
 
     public int getContract_period() {

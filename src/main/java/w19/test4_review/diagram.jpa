@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" ptype="MONOLITH" ppkg="w19.test4_review" epkg="entities" v="5.2" rws="_155535374586618" Pws="_155535374586618" cws="_155535374586618" persistenceUnitName="w19.test4_review_PU" sm="false" xs="false" id="_155535374586517" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
-    <jpa:entity compositePrimaryKeyClass="EmployeePK" abs="false" class="Employee" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380192819">
+<jpa:entity-mappings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" ptype="MONOLITH" ppkg="w19.test4_review" epkg="entities" v="5.2" rws="_155535374586618" Pws="_155535374586618" cws="_155535374586618" persistenceUnitName="w19_test4_review_PU" sm="false" xs="false" id="_155535374586517" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd">
+    <jpa:entity compositePrimaryKeyClass="EmpPK" abs="false" class="Emp" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_15555087488159">
         <jpa:ath>fcarella</jpa:ath>
         <jpa:attributes>
-            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_155535392110028">
+            <jpa:basic attribute-type="String" v="true" xvt="" name="name" id="_155550888111922">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
-            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_155535380192920">
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_155550874882510">
                 <jpa:xwm/>
                 <jpa:xm/>
                 <jpa:generated-value strategy="IDENTITY"/>
             </jpa:id>
         </jpa:attributes>
-        <jpa:nq e="false" name="Employee.findAll">
-            <jpa:query>Select e from Employee e</jpa:query>
+        <jpa:nq e="false" name="Emp.findAll">
+            <jpa:query>Select e from Emp e</jpa:query>
         </jpa:nq>
-        <jpa:nq e="false" name="Employee.findByName">
-            <jpa:query>Select e from Employee e where e.name=:name</jpa:query>
+        <jpa:nq e="false" name="Emp.findByName">
+            <jpa:query>Select e from Emp e where e.name=:name</jpa:query>
         </jpa:nq>
     </jpa:entity>
-    <jpa:entity compositePrimaryKeyClass="Regular_EmployeePK" abs="false" class="Regular_Employee" superclassId="_155535380192819" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380501522">
+    <jpa:entity compositePrimaryKeyClass="Regular_EmpPK" abs="false" class="Regular_Emp" superclassId="_15555087488159" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155550875060612">
         <jpa:ath>fcarella</jpa:ath>
         <jpa:attributes>
-            <jpa:basic attribute-type="float" v="true" xvt="" name="salary" id="_155535407330329">
+            <jpa:basic attribute-type="double" v="true" xvt="" name="salary" id="_155550883419120">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
-            <jpa:basic attribute-type="int" v="true" xvt="" name="bonus" id="_155535407971230">
+            <jpa:basic attribute-type="int" v="true" xvt="" name="bonus" id="_155550883890421">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
         </jpa:attributes>
-        <jpa:nq e="false" name="Regular_Employee.findAll">
-            <jpa:query>Select e from Regular_Employee e</jpa:query>
+        <jpa:nq e="false" name="Regular_Emp.findAll">
+            <jpa:query>Select e from Regular_Emp e</jpa:query>
         </jpa:nq>
-        <jpa:nq e="false" name="Regular_Employee.findBySalary">
-            <jpa:query>Select r from Regular_Employee r where r.salary=:salary</jpa:query>
+        <jpa:nq e="false" name="Regular_Emp.findBySalary">
+            <jpa:query>Select r from Regular_Emp r where r.salary=:salary</jpa:query>
         </jpa:nq>
-        <jpa:nq e="false" name="Regular_Employee.findByBonus">
-            <jpa:query>Select r from Regular_Employee r where r.bonus=:bonus</jpa:query>
+        <jpa:nq e="false" name="Regular_Emp.findByBonus">
+            <jpa:query>Select r from Regular_Emp r where r.bonus=:bonus</jpa:query>
         </jpa:nq>
     </jpa:entity>
-    <jpa:entity compositePrimaryKeyClass="Contract_EmployeePK" abs="false" class="Contract_Employee" superclassId="_155535380192819" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155535380738425">
+    <jpa:entity compositePrimaryKeyClass="Contract_EmpPK" abs="false" class="Contract_Emp" superclassId="_15555087488159" v="true" jbn="false" xre="false" m="false" rootElement="_155535374586517" id="_155550875369415">
         <jpa:ath>fcarella</jpa:ath>
         <jpa:attributes>
-            <jpa:basic attribute-type="float" v="true" xvt="" name="pay_per_hour" id="_155535421038633">
+            <jpa:basic attribute-type="double" v="true" xvt="" name="pay_per_hr" id="_155550880794418">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
-            <jpa:basic attribute-type="int" v="true" xvt="" name="contract_period" id="_155535421820234">
+            <jpa:basic attribute-type="int" v="true" xvt="" name="contract_period" id="_155550880844719">
                 <jpa:xwm/>
                 <jpa:xm/>
             </jpa:basic>
         </jpa:attributes>
-        <jpa:nq e="false" name="Contract_Employee.findAll">
-            <jpa:query>Select e from Contract_Employee e</jpa:query>
+        <jpa:nq e="false" name="Contract_Emp.findAll">
+            <jpa:query>Select e from Contract_Emp e</jpa:query>
         </jpa:nq>
-        <jpa:nq e="false" name="Contract_Employee.findByPay_per_hour">
-            <jpa:query>Select c from Contract_Employee c where c.pay_per_hour=:pay_per_hour</jpa:query>
+        <jpa:nq e="false" name="Contract_Emp.findByPay_per_hr">
+            <jpa:query>Select c from Contract_Emp c where c.pay_per_hr=:pay_per_hr</jpa:query>
         </jpa:nq>
-        <jpa:nq e="false" name="Contract_Employee.findByContract_period">
-            <jpa:query>Select c from Contract_Employee c where c.contract_period=:contract_period</jpa:query>
+        <jpa:nq e="false" name="Contract_Emp.findByContract_period">
+            <jpa:query>Select c from Contract_Emp c where c.contract_period=:contract_period</jpa:query>
         </jpa:nq>
     </jpa:entity>
     <jpa:wsl>
         <jpa:ws n="Main" id="_155535374586618">
-            <i ref="_155535380192819" x="213" y="86"/>
-            <i ref="_155535380501522" x="62" y="282"/>
-            <i ref="_155535380738425" x="371" y="282"/>
+            <i ref="_155550875369415" x="689" y="429"/>
+            <i ref="_155550875060612" x="222" y="433"/>
+            <i ref="_15555087488159" x="431" y="148"/>
         </jpa:ws>
     </jpa:wsl>
 </jpa:entity-mappings>

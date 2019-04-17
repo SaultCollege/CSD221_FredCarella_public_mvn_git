@@ -8,19 +8,19 @@ import javax.persistence.Entity;
  */
 
 @Entity
-public class Regular_Employee extends Employee {
+public class Regular_Emp extends Emp {
 
     @Basic
-    private float salary;
+    private double salary;
 
     @Basic
     private int bonus;
 
-    public float getSalary() {
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(float salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
